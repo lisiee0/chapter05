@@ -25,6 +25,8 @@ public class Ex01 {
 			
 			out.write(buffer);
 		}
+		in.close();
+		out.close();
 		
 		/*
 		System.out.println("복사시작");
