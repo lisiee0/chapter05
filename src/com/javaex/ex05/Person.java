@@ -45,9 +45,4 @@ public class Person {
 		System.out.println("회사 : "+company);
 		System.out.println("");
 	}
-	
-	public String contact(String name, String hp, String company) {
-		String contact= name+","+hp+","+company;
-		return contact;
-	}
 }
