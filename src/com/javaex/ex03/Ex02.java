@@ -18,6 +18,7 @@ public class Ex02 {
 			if(str==null) {
 				break;	
 			}
+			System.out.println(str);
 		}
 		br.close();
 	}
