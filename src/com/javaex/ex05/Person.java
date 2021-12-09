@@ -1,12 +1,12 @@
-package com.javaex.ex03;
+package com.javaex.ex05;
 
-public class Friend {
+public class Person {
 	private String name;
 	private String hp;
 	private String company;
 	
 	
-	public Friend(String name, String hp, String company) {
+	public Person(String name, String hp, String company) {
 		this.name = name;
 		this.hp = hp;
 		this.company = company;

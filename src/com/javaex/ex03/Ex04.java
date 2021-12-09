@@ -10,7 +10,6 @@ import java.io.InputStreamReader;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Ex04 {
 
@@ -38,21 +37,21 @@ public class Ex04 {
 			company= info.split(",")[2];
 			Friend newfriend= new Friend(name, hp, company);
 			fList.add(newfriend);
+			bw.write(newfriend.contact(name, hp, company));
 			
 		}
+		
 		for(Friend f: fList) {
 			f.showInfo();
 		}
-		/*
-		Scanner sc= new Scanner(System.in);
 		
+		Friend f01= new Friend("유재석", "011-9999-7777", "02-900-9888");
+		fList.add(f01);
+		bw.write(f01.contact(name, hp, company));
 		
-		
-		
-		sc.close();
-		
-		bw.close();*/
+		bw.close();
 		br.close();
-		
 	}
+	
+		
 }
