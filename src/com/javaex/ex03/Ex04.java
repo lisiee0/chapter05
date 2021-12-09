@@ -37,6 +37,7 @@ public class Ex04 {
 			company= info.split(",")[2];
 			Friend newfriend= new Friend(name, hp, company);
 			fList.add(newfriend);
+			
 			bw.write(newfriend.contact(name, hp, company));
 			bw.newLine();
 			
@@ -46,8 +47,10 @@ public class Ex04 {
 			f.showInfo();
 		}
 		
+		// Friend 추가
 		Friend f01= new Friend("유재석", "011-9999-7777", "02-900-9888");
 		fList.add(f01);		
+		bw.write(f01.contact(f01.getName(), f01.getHp(), f01.getCompany()));
 		
 		bw.close();
 		br.close();

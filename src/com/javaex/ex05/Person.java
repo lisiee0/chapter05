@@ -1,7 +1,7 @@
 package com.javaex.ex05;
 
 public class Person {
-	private String name;
+	protected String name;
 	private String hp;
 	private String company;
 	
@@ -11,7 +11,6 @@ public class Person {
 		this.hp = hp;
 		this.company = company;
 	}
-
 
 	public void showInfo() {
 		System.out.println("이름 : "+name);
