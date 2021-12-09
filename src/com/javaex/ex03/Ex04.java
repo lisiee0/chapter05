@@ -46,12 +46,9 @@ public class Ex04 {
 		}
 		
 		Friend f01= new Friend("유재석", "011-9999-7777", "02-900-9888");
-		fList.add(f01);
-		bw.write(f01.contact(name, hp, company));
+		fList.add(f01);		
 		
 		bw.close();
 		br.close();
-	}
-	
-		
+	}	
 }
