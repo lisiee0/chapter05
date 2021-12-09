@@ -1,9 +1,12 @@
 package com.javaex.ex06;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -35,7 +38,7 @@ public class PhoneApp {
 			p.showInfo();
 		}
 		
-		// 여기까지 txt파일 읽고 List에 저장하기
+		// 여기까지 txt 파일 읽고 List에 저장하기
 		
 		// 아래부터 데이터 추가후 다시 출력하기
 		Scanner sc= new Scanner(System.in);
@@ -56,9 +59,19 @@ public class PhoneApp {
 		for(Person p: pList) {
 			p.showInfo();
 		}
-
+		
+		// 현재까지 pList를 txt 파일로 만들기
+		
+		Writer wr= new FileWriter("C:\\javaStudy\\file\\PhoneDB.txt");
+		BufferedWriter bw= new BufferedWriter(wr);
+		
+		for(Person p: pList) {
+			bw.write(p.save());
+			bw.newLine();
+		}
+		
 		sc.close();		
 		br.close();
-
+		bw.close();
 	}
 }
