@@ -38,6 +38,7 @@ public class Ex04 {
 			Friend newfriend= new Friend(name, hp, company);
 			fList.add(newfriend);
 			bw.write(newfriend.contact(name, hp, company));
+			bw.newLine();
 			
 		}
 		
